@@ -37,6 +37,7 @@
 
 #include <stdio.h>     /* for printf */
 #include <stdlib.h>    /* for exit */
+#include <string.h>
 #include <getopt.h>
 #include <math.h>
 #include <errno.h>

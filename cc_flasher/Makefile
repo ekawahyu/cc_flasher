@@ -18,11 +18,13 @@ OBJS = \
 	$(OBJDIR)/ccc/tcplistener.o  \
 	
 	
+MACPORTS_INCDIR = /opt/local/include
+MACPORTS_LIBDIR = /opt/local/lib
 
 BINS = $(BINDIR)/cc_flasher 
 
-CFLAGS = -I$(SRCDIR) -O0 -g3  -I$(SRCDIR)/ccc/include -DCC_DEBUGER
-LDFLAGS = -lusb  -lstdc++ -lpthread
+CFLAGS = -I$(MACPORTS_INCDIR) -I$(SRCDIR) -O0 -g3  -I$(SRCDIR)/ccc/include -DCC_DEBUGER
+LDFLAGS= -L$(MACPORTS_LIBDIR) -lusb -lstdc++ -lpthread
 
 all: $(BINS)
 

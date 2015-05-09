@@ -35,6 +35,10 @@
  *	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 #include <debugserver.h>
 #include <tcpconnection.h>
 #include <tcplistener.h>
